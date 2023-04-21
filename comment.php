@@ -14,7 +14,7 @@
       exit();
     }
   } else {
-    $post_no = strip_tags($_GET['post_no']);
+    $post_no = strip_tags($_GET['no']);
   }
   require 't_comment.php';
 ?>

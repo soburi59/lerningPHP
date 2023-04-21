@@ -8,7 +8,7 @@
     if (!$content) $error .= '本文がありません。<br>';
     if (!$error) {
       $pdo = new PDO("mysql:dbname=blog", "root");
-      $st = $pdo -> query("INSERT INTO post(title,content) VALUES('$title','$content')");
+      $st = $pdo -> query("INSERT INTO post(title,content,) VALUES('$title','$content')");
       header('Location: index.php');#index.phpをクライアントに送信
       exit();
     }

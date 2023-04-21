@@ -9,15 +9,9 @@
 <h1>Special Blog</h1>
 <?php foreach ($posts as $post) { ?>
   <div class="post">
-    <h2><?php
-     echo $post['title'] 
-     ?></h2>
-    <p><?php
-     echo nl2br($post['content']) 
-     ?></p>
-    <?php
-     foreach ($post['comments'] as $comment) { 
-      ?>
+    <h2><?php echo $post['title'] ?></h2>
+    <p><?php echo nl2br($post['content']) ?></p>
+    <?php foreach ($post['comments'] as $comment) { ?>
       <div class="comment">
         <h3><?php echo $comment['name'] ?></h3>
         <p><?php echo nl2br($comment['content']) ?></p>
